@@ -4,34 +4,10 @@ import Header from "./Header"
 import SponsorBadge from './Sponserbadge';
 import EditableCtaContainer from './EditableCtaContainer'
 import TrendingContainer from './TrendingContainer'
-
-
-// class App extends React.Component {
-//     constructor(props){
-//       super(props);
-//       //this.state = {};
-//     }
-// //          render() {
-// //            const { medias } = this.props;
-
-//       return (
-//           <div className="container-fluid">
-//               <Header/>
-//               <SponsorBadge/>
-//               <EditableCtaContainer/>
-          
-
-//           </div>
-//       );
-//     }
-//   }
-
-
-
-
+import MoeConv from './MoreConv'
+import Adevertisement from './Adevertisement'
+// import AdvertisementSmall from './AdvertisementSmall'
 class App extends React.Component {
-
-
     constructor(){
         super();
         this.state={
@@ -39,25 +15,20 @@ class App extends React.Component {
            
         }
     }
-
-
-    
     render() {
         return (          
             <div>
-
                 <Header/>
                 <SponsorBadge/>   
                 <EditableCtaContainer />
-
                 <br/>
                 <br/>
                 <TrendingContainer/>
+                <MoeConv/>
+                <Adevertisement/>
                 
             </div>
         );
     }
 }
-
-
 export default App;

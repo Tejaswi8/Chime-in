@@ -23,7 +23,7 @@ import React from 'react';
         <div className="row">
             {this.state.items.map(item=>
                                   
-              <div className="col-lg-3" key={item.feedUuid} >
+              <div className="col-lg-3" >
                 <div className="panel panel-default">
                     <div className="panel-body">
                         <p>This is an editable CTA – Please Chime In, send us your photos or videos on this specific topic</p>
@@ -31,15 +31,10 @@ import React from 'react';
                              <div className="preview-container2">
                                 {
                                     item.medias.type=='VIDEO' ?
-                                                <iframe key={item.feedUuid} className="preview-video" src={item.medias.renditionData.mp4.url}></iframe>:
-                                                <iframe key={item.feedUuid} className="preview-video" src={item.medias.renditionData.mp4.url}></iframe>
+                                                <iframe  className="preview-video" ></iframe>:
+                                                <iframe  className="preview-video" ></iframe>
                                 }
                             </div>
-                            
-                            
-                           
-                            
-                            
                         </div>
                         <div className="row">
                             { item.feedStatus=='ACTIVE' ? <button type="button" className="btn btn-link"> <span className="glyphicon glyphicon-camera" aria-hidden="true"></span> Upload </button> : null }
